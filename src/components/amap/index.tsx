@@ -3,7 +3,6 @@ import AMapLoader from "@amap/amap-jsapi-loader";
 import styled from "styled-components";
 import { message as toast } from "antd";
 
-import useSubscription from "@/hooks/useSubscription";
 import { SENTRY_CLASSES_COLOR_MAP, MOCK_SENTRY_DATA } from "@/utils/constant";
 import { wgs84togcj02 } from "@/utils";
 
@@ -28,8 +27,6 @@ export default function AMap() {
   const mapRef = useRef<any>(null);
   const sentryRef = useRef<any>(null);
   const [sentry, setSentry] = useState<any>();
-
-  const { message } = useSubscription("nhy/sentinel");
 
   useEffect(() => {
     AMapLoader.load({
@@ -82,11 +79,6 @@ export default function AMap() {
       mapRef.current?.destroy();
     };
   }, []);
-
-  useEffect(() => {
-    if (!message) return;
-    setSentry(message.value);
-  }, [message]);
 
   useEffect(() => {
     // 每次收到告警，处理
