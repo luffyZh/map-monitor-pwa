@@ -1,0 +1,32 @@
+{
+  "name": "电子哨兵",
+  "short_name": "哨兵",
+  "description": "电子哨兵监控系统",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#7c4dff",
+  "icons": [{
+      "src": "/assets/images/monitor-icon-red.svg",
+      "sizes": "48x48",
+      "type": "image/svg+xml"
+    }, {
+      "src": "/assets/images/monitor-icon-red.svg",
+      "sizes": "96x96",
+      "type": "image/svg+xml"
+    }, {
+      "src": "/assets/images/monitor-icon-red.svg",
+      "sizes": "144x144",
+      "type": "image/svg+xml"
+    }, {
+      "src": "/assets/images/monitor-icon-red.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }, {
+      "src": "/assets/images/monitor-icon-red.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
