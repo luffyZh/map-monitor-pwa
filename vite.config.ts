@@ -19,8 +19,17 @@ export default defineConfig({
       '@/stores': '/src/stores/',
     },
   },
+  build: {
+    outDir: 'docs'
+  },
   plugins: [
     react(),
+    {
+      name: 'html-transform',
+      transformIndexHtml(html) {
+        return html.replace("‘/sw.js'", "'/map-monitor-pwa/sw.js'");
+      }
+    },
     {
       name: 'generate-sw',
       writeBundle(options, bundle) {

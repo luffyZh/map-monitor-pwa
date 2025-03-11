@@ -10,7 +10,7 @@
     <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js')
+        navigator.serviceWorker.register('/map-monitor-pwa/sw.js')
           .then(registration => {
             console.log('ServiceWorker registration successful');
           })
@@ -24,7 +24,6 @@
   <link rel="stylesheet" crossorigin href="/map-monitor-pwa/assets/index-ii5_3CCP.css">
 </head>
   <body>
-    <div id="root"></div>
-
+    <div id="root"></div>
   </body>
 </html>
