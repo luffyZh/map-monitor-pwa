@@ -8,6 +8,9 @@ dotenv.config({ path: `.env.${process.env.NODE_ENV}` });
 export default defineConfig({
   base: process.env.VITE_BASE_PATH,
   plugins: [react()],
+  build: {
+    outDir: 'docs',
+  },
   resolve: {
     alias: {
       '@/': '/src/',
@@ -18,4 +21,4 @@ export default defineConfig({
       '@/stores': '/src/stores/',
     },
   }
-})
+});
