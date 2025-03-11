@@ -98,7 +98,9 @@ export default function AMap() {
       );
       const marker = new mapInstance.Marker({
         position: wgs84togcj02(data.longitude, data.latitude),
-        icon: "/assets/images/monitor-icon-red.svg",
+        icon: `${
+          import.meta.env.VITE_BASE_PATH
+        }assets/images/monitor-icon-red.svg`,
         // 宽高都是 48，偏移量 x 是 24，y 是 45， 因为有 3px 的底部阴影
         offset: new mapInstance.Pixel(-24, -45),
       });
