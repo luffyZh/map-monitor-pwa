@@ -45,7 +45,7 @@ export default defineConfig({
         // 添加构建后的资源文件到缓存列表
         const buildUrlsToCache = Object.keys(bundle)
           .filter(fileName => fileName.endsWith('.js') || fileName.endsWith('.css'))
-          .map(fileName => `/map-monitor-pwa/assets/${fileName}`);
+          .map(fileName => `/map-monitor-pwa/${fileName}`);
 
         // 合并所有需要缓存的文件
         const urlsToCache = [...baseUrlsToCache, ...buildUrlsToCache];
