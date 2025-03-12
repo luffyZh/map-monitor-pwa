@@ -5,25 +5,25 @@
   "start_url": "/map-monitor-pwa/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#7c4dff",
+  "theme_color": "#e6e6e6",
   "icons": [{
-      "src": "/map-monitor-pwa/assets/images/monitor-icon-red.svg",
+      "src": "/map-monitor-pwa/assets/icons/monitor_48x48.svg",
       "sizes": "48x48",
       "type": "image/svg+xml"
     }, {
-      "src": "/map-monitor-pwa/assets/images/monitor-icon-red.svg",
+      "src": "/map-monitor-pwa/assets/icons/monitor_96x96.svg",
       "sizes": "96x96",
       "type": "image/svg+xml"
     }, {
-      "src": "/map-monitor-pwa/assets/images/monitor-icon-red.svg",
+      "src": "/map-monitor-pwa/assets/icons/monitor_144x144.svg",
       "sizes": "144x144",
       "type": "image/svg+xml"
     }, {
-      "src": "/map-monitor-pwa/assets/images/monitor-icon-red.svg",
+      "src": "/map-monitor-pwa/assets/icons/monitor_192x192.svg",
       "sizes": "192x192",
       "type": "image/svg+xml"
     }, {
-      "src": "/map-monitor-pwa/assets/images/monitor-icon-red.svg",
+      "src": "/map-monitor-pwa/assets/icons/monitor_512x512.svg",
       "sizes": "512x512",
       "type": "image/svg+xml",
       "purpose": "any maskable"

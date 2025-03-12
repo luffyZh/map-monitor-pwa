@@ -4,7 +4,7 @@ const urlsToCache = [
   '/map-monitor-pwa/index.html',
   '/map-monitor-pwa/manifest.json',
   '/map-monitor-pwa/assets/images/monitor-icon-red.svg',
-  '/map-monitor-pwa/assets/audio/alert.mp3'
+  '/map-monitor-pwa/assets/audio/alert.wav'
 ];
 
 self.addEventListener('install', (event) => {
