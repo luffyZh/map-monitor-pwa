@@ -27,7 +27,7 @@ export default defineConfig({
     {
       name: 'html-transform',
       transformIndexHtml(html) {
-        return html.replace("‘/sw.js'", "'/map-monitor-pwa/sw.js'");
+        return html.replace("'/sw.js'", "'/map-monitor-pwa/sw.js'");
       }
     },
     {
@@ -35,17 +35,17 @@ export default defineConfig({
       writeBundle(options, bundle) {
         // 基础缓存文件列表
         const baseUrlsToCache = [
-          '/map-monitor-pwa/',
-          '/map-monitor-pwa/index.html',
-          '/map-monitor-pwa/manifest.json',
-          '/map-monitor-pwa/assets/images/monitor-icon-red.svg',
-          '/map-monitor-pwa/assets/audio/alert.mp3'
+          `${process.env.VITE_BASE_PATH}`,
+          `${process.env.VITE_BASE_PATH}index.html`,
+          `${process.env.VITE_BASE_PATH}manifest.json`,
+          `${process.env.VITE_BASE_PATH}assets/images/monitor-icon-red.svg`,
+          `${process.env.VITE_BASE_PATH}assets/audio/alert.wav`
         ];
 
         // 添加构建后的资源文件到缓存列表
         const buildUrlsToCache = Object.keys(bundle)
           .filter(fileName => fileName.endsWith('.js') || fileName.endsWith('.css'))
-          .map(fileName => `/map-monitor-pwa/${fileName}`);
+          .map(fileName => `${process.env.VITE_BASE_PATH}${fileName}`);
 
         // 合并所有需要缓存的文件
         const urlsToCache = [...baseUrlsToCache, ...buildUrlsToCache];

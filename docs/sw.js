@@ -4,7 +4,7 @@ const CACHE_NAME = 'map-monitor-pwa-v1';
   "/map-monitor-pwa/index.html",
   "/map-monitor-pwa/manifest.json",
   "/map-monitor-pwa/assets/images/monitor-icon-red.svg",
-  "/map-monitor-pwa/assets/audio/alert.mp3",
+  "/map-monitor-pwa/assets/audio/alert.wav",
   "/map-monitor-pwa/assets/index-ii5_3CCP.css",
   "/map-monitor-pwa/assets/index-Bv5LE3zu.js"
 ];
