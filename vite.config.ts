@@ -51,7 +51,7 @@ export default defineConfig({
         const urlsToCache = [...baseUrlsToCache, ...buildUrlsToCache];
 
         // 生成 sw.js 内容
-        const swContent = `const CACHE_NAME = 'map-monitor-pwa-v1';
+        const swContent = `const CACHE_NAME = 'map-monitor-pwa-${Date.now()}';
         const urlsToCache = ${JSON.stringify(urlsToCache, null, 2)};
 
         self.addEventListener('install', (event) => {
